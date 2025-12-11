@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunbeam Registration Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10 flex flex-col items-center">
+
+    <!-- Main Container -->
+    <div class="w-full max-w-5xl bg-white p-6 shadow rounded">
+        <div class="text-center mb-6">
+            <img src="/images/logo.png" alt="Sunbeam Image" class="rounded shadow mb-2 w-40 mx-auto" />
+            <h1 class="text-3xl font-bold">Sunbeam Registration Form</h1>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6">
+            <div>
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/02q9aAVv1NI" class="rounded shadow" allowfullscreen></iframe>
+                <!-- Table Section -->
+                <div class="w-full max-w-4xl mt-10 bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                    <h2 class="text-2xl font-bold mb-4 text-center">Course Timing Table</h2>
+
+                <table class="w-full border border-gray-700 text-center">
+                    <tr class="bg-gray-200">
+                        <td colspan="3" class="border border-gray-700 font-bold p-2" align="center">Sunbeam Course Schedule</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2" class="border border-gray-700 p-3 font-semibold" align="center">Batch A</td>
+                        <td class="border border-gray-700 p-3" align="center">Morning</td>
+                        <td class="border border-gray-700 p-3" align="center">10 AM - 12 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td class="border border-gray-700 p-3" align="center">Afternoon</td>
+                        <td class="border border-gray-700 p-3" align="center">2 PM - 4 PM</td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+            <div>
+                <form class="bg-gray-50 p-6 rounded shadow">
+
+                    <label class="block font-semibold">Name:</label>
+                    <input type="text" required class="border p-2 w-full mb-3" />
+
+                    <label class="block font-semibold">Birthdate:</label>
+                    <input type="date" required class="border p-2 w-full mb-3" />
+
+                    <label class="block font-semibold">Email:</label>
+                    <input type="email" required class="border p-2 w-full mb-3" />
+
+                    <label class="block font-semibold">Password:</label>
+                    <input type="password" required class="border p-2 w-full mb-3" />
+
+                    <label class="block font-semibold">Address:</label>
+                    <textarea class="border p-2 w-full mb-3" rows="1"></textarea>
+
+                    <label class="block font-semibold">Gender:</label>
+                    <div class="flex gap-4 mb-3">
+                        <label><input type="radio" name="gender" /> Male</label>
+                        <label><input type="radio" name="gender" /> Female</label>
+                    </div>
+
+                    <label class="block font-semibold">Upload Photo:</label>
+                    <input type="file" class="mb-3" />
+
+                    <label class="block font-semibold">Select Your Course:</label>
+                    <select class="border p-2 w-full mb-3">
+                        <option>Select Course</option>
+                        <option>Java</option>
+                        <option>CPP</option>
+                        <option>OS</option>
+                    </select>
+
+                    <label class="block font-semibold">Skill Set:</label>
+                    <div class="mb-4">
+                        <label class="mr-4"><input type="checkbox" /> Java</label>
+                        <label class="mr-4"><input type="checkbox" /> CPP</label>
+                        <label><input type="checkbox" /> OS</label>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded">Register</button>
+                        <button class="bg-gray-500 text-white px-4 py-2 rounded">Clear</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
